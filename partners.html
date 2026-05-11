@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Just Me Media Partner Network. Help us grow our AI-powered products and bespoke software services. Commission-based opportunities for marketers and influencers.">
+    <title>Partner Network — Just Me Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Outfit:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <style>
+        .partner-hero { padding: 10rem 0 6rem; background: var(--off); position: relative; overflow: hidden; }
+        .partner-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 6rem; align-items: start; }
+        .partner-list { list-style: none; display: flex; flex-direction: column; gap: 2.5rem; margin-top: 3rem; }
+        .partner-item h3 { font-size: 1.4rem; margin-bottom: 0.75rem; color: var(--ink); }
+        .partner-item p { color: var(--mid); font-weight: 300; line-height: 1.7; }
+        .commission-badge { display: inline-block; background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 100px; font-size: 0.75rem; font-weight: 700; margin-top: 0.5rem; }
+        .form-card { background: var(--white); padding: 3rem; border-radius: 24px; border: 1px solid var(--border); box-shadow: 0 40px 100px rgba(0,0,0,0.05); }
+        @media (max-width: 1024px) { .partner-grid { grid-template-columns: 1fr; gap: 4rem; } }
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav id="navbar" class="scrolled">
+    <div class="nav-container">
+        <a href="/" class="nav-logo">Just Me <span>Media</span></a>
+        <ul class="nav-links">
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/#products">Products</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/#contact" class="nav-cta">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="partner-hero">
+    <div class="container">
+        <div class="partner-grid">
+            <div class="partner-content fade-up">
+                <span class="pill">Partner Network</span>
+                <h1>Scale the next generation of <em>AI products.</em></h1>
+                <p class="hero-sub">Just Me Media is looking for select partners to help grow our revenue and expand our product reach. We build the technology—you drive the growth. High-incentive, commission-based roles for high-performers.</p>
+                
+                <div class="partner-list">
+                    <div class="partner-item">
+                        <h3>Growth Partners</h3>
+                        <p>Focus on B2B lead generation for our SaaS APIs and bespoke software services. You find the problem, we provide the solution.</p>
+                        <span class="commission-badge">30% Commission on Contracts</span>
+                    </div>
+                    <div class="partner-item">
+                        <h3>Content Partners</h3>
+                        <p>For influencers and creators in the travel, tech, and sports niches. Leverage your audience to grow our B2C product user base.</p>
+                        <span class="commission-badge">Revenue Share / Affiliate Model</span>
+                    </div>
+                    <div class="partner-item">
+                        <h3>Strategic Associates</h3>
+                        <p>Experienced sales professionals who can close high-stakes bespoke development deals for private AI environments.</p>
+                        <span class="commission-badge">Tiered Revenue Bonuses</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partner-form-wrap fade-up" style="--delay: 0.2s">
+                <div class="form-card">
+                    <h3>Apply to Join</h3>
+                    <p style="color: var(--mid); font-size: 0.9rem; margin-bottom: 2rem;">Tell us about your experience and how you'd like to help us grow.</p>
+                    
+                    <form id="partner-form">
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label for="p-name" style="color: var(--ink); font-size: 0.8rem; font-weight: 600;">Full Name</label>
+                            <input type="text" id="p-name" name="name" placeholder="Your Name" required style="width: 100%; border: 1px solid var(--border); padding: 0.8rem; border-radius: 8px;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label for="p-email" style="color: var(--ink); font-size: 0.8rem; font-weight: 600;">Email Address</label>
+                            <input type="email" id="p-email" name="email" placeholder="email@example.com" required style="width: 100%; border: 1px solid var(--border); padding: 0.8rem; border-radius: 8px;">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 1.5rem;">
+                            <label for="p-role" style="color: var(--ink); font-size: 0.8rem; font-weight: 600;">Role of Interest</label>
+                            <select id="p-role" name="role" style="width: 100%; border: 1px solid var(--border); padding: 0.8rem; border-radius: 8px; background: white;">
+                                <option value="growth">Growth Partner (B2B)</option>
+                                <option value="content">Content Partner (Influencer)</option>
+                                <option value="strategic">Strategic Associate (Sales)</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 2rem;">
+                            <label for="p-message" style="color: var(--ink); font-size: 0.8rem; font-weight: 600;">Briefly describe your strategy</label>
+                            <textarea id="p-message" name="message" rows="4" placeholder="How would you grow Just Me Media products?" required style="width: 100%; border: 1px solid var(--border); padding: 0.8rem; border-radius: 8px; resize: none;"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%; cursor: pointer;">Submit Application</button>
+                    </form>
+                    <div id="partner-success" style="display: none; text-align: center; padding: 2rem 0;">
+                        <div style="font-size: 2rem; color: #10B981; margin-bottom: 1rem;">✓</div>
+                        <h3 style="color: var(--ink); margin-bottom: 0.5rem;">Application Received</h3>
+                        <p style="color: var(--mid); font-size: 0.9rem;">Thank you for your interest. William will review your application and respond shortly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a href="/" class="footer-logo">Just Me <span>Media</span></a>
+                <p class="footer-tagline">AI Systems & Product Development</p>
+            </div>
+            <div class="footer-links">
+                <a href="/#services">Services</a>
+                <a href="/#products">Products</a>
+                <a href="/#about">About</a>
+                <a href="/#contact">Contact</a>
+            </div>
+            <div class="footer-right">
+                <p class="footer-copy">© 2026 Just Me Media</p>
+                <p class="footer-location">Minesing, Ontario, Canada · Est. 2022</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
