@@ -9,7 +9,7 @@ This document outlines the production infrastructure for the Just Me Media web p
 * **AI Evolution:** The agency expanded into Advanced AI development and bespoke software projects in early 2025.
 * **Digital Presence:** This dedicated web infrastructure and landing page was developed and deployed in 2026 to support the new AI-focused partner network and sales pipeline.
 
-The architecture below is designed for **Zero Monthly Cost**, high reliability, and maximum scalability.
+The architecture below is designed for **Maximum ROI**, high reliability, and maximum scalability.
 
 ### 1. Frontend (Static Hosting)
 * **Provider:** Netlify
