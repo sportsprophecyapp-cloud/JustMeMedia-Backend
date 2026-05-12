@@ -2,7 +2,14 @@
 
 ## Core Infrastructure
 
-This document outlines the production infrastructure for Just Me Media, established in May 2026. The architecture is designed for **Zero Monthly Cost**, high reliability, and maximum scalability.
+This document outlines the production infrastructure for the Just Me Media web presence, established in May 2026. 
+
+### Company Context
+* **Founding:** Just Me Media was originally registered in 2022.
+* **AI Evolution:** The agency expanded into Advanced AI development and bespoke software projects in early 2025.
+* **Digital Presence:** This dedicated web infrastructure and landing page was developed and deployed in 2026 to support the new AI-focused partner network and sales pipeline.
+
+The architecture below is designed for **Zero Monthly Cost**, high reliability, and maximum scalability.
 
 ### 1. Frontend (Static Hosting)
 * **Provider:** Netlify
