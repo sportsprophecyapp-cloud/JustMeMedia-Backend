@@ -19,7 +19,7 @@
 *   **Permanent Privacy:** No cloud subscription means your data sovereignty is permanent, not just a policy that can change tomorrow.
 
 ### 💼 BUSINESS ADVANTAGES
-*   **Unlimited Internal Use:** Zero per-query API costs. Your entire team can use the AI constantly without driving up a monthly cloud bill.
+*   **Unlimited Internal Use:** Fixed, predictable infrastructure. Your entire team can use the AI constantly without driving up unpredictable monthly cloud bills.
 *   **Works Offline:** No active internet connection required for AI queries. Total immunity to cloud outages.
 *   **Instant Local Processing:** Zero-latency data transfer for your internal workflows.
 *   **Fixed Capex vs. Opex:** One-time setup cost for the infrastructure, avoiding expensive, escalating per-user SaaS subscriptions.

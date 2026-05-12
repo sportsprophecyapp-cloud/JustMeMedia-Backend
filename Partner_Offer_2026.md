@@ -38,7 +38,7 @@ We are looking for a highly capable operator who excels in customer acquisition.
 We believe in aligning incentives. We are offering a highly lucrative, zero-cap revenue share model for our Growth Partners.
 
 * **30% – 40% Lifetime Revenue Share** on every customer, subscription, or enterprise deal you generate.
-* **Zero Overhead:** No buy-in required. No production costs.
+* **Pure Margin:** No buy-in required. No production costs.
 * **Exclusive Collaboration:** We cap our network at 2 partners to ensure you receive our full technical support and priority feature development.
 
 ---
