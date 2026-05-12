@@ -9,7 +9,7 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "https://YOUR-RENDER-APP-URL.onrender.com/api/:splat"
+  to = "https://justmemedia-backend-fdgq.onrender.com/api/:splat"
   status = 200
   force = true
 
