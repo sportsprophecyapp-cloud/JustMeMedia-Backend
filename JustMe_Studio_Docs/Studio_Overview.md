@@ -19,6 +19,6 @@ To reach the first $1,000 in revenue, we are pursuing a multi-track strategy:
 3.  **Affiliate Commissions**: Generate ~15–20 hotel bookings via TripSync.
 
 ## 💰 Financial Operating Principles
-1.  **Zero-Budget Baseline**: All projects remain on "Free" or "Ultra-Low-Cost" tiers by default. No monthly subscriptions are incurred for projects without active revenue.
+1.  **Maximum ROI Baseline**: All projects remain on optimized infrastructure tiers by default. Capital is only deployed for scaling projects with active revenue.
 2.  **Self-Sustaining Growth**: Once a project generates income, a portion of those funds is reinvested back into that specific project to upgrade infrastructure (e.g., Render Starter plans) or fund marketing.
 3.  **Revenue First**: No feature development is prioritized unless it directly contributes to one of the tracks in the Monetization Matrix.
