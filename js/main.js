@@ -49,7 +49,7 @@ if (contactForm) {
         const formData = new FormData(contactForm);
         const jsonData = Object.fromEntries(formData.entries());
         
-        fetch("https://justmemedia-backend.onrender.com/api/contact", {
+        fetch("https://justmemedia-backend-fdgq.onrender.com/api/contact", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(jsonData),
@@ -94,7 +94,7 @@ if (partnerForm) {
             strategy: formData.get('message')
         };
         
-        fetch("https://justmemedia-backend.onrender.com/api/partners", {
+        fetch("https://justmemedia-backend-fdgq.onrender.com/api/partners", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(jsonData),
