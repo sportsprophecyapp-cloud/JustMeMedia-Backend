@@ -10,7 +10,7 @@ app = Flask(__name__)
 # Enable CORS for the frontend to communicate with the backend
 CORS(app)
 
-resend.api_key = os.getenv("RESEND_API_KEY", "re_6mgdu92j_3fNjjtqazmQT9q9wP3MGQ8pU")
+resend.api_key = os.getenv("RESEND_API_KEY")
 DESTINATION_EMAIL = "william@justmemedia.ca"
 
 def send_email(subject, body):
