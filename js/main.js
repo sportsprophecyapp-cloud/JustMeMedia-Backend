@@ -1,16 +1,20 @@
 // Navbar scroll effect
 const nav = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
-});
+if (nav) {
+    window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+}
 
 // Mobile menu
 const toggle = document.getElementById('mobile-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
-toggle.addEventListener('click', () => mobileMenu.classList.toggle('open'));
-document.querySelectorAll('.mobile-link').forEach(link => {
-    link.addEventListener('click', () => mobileMenu.classList.remove('open'));
-});
+if (toggle && mobileMenu) {
+    toggle.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+    document.querySelectorAll('.mobile-link').forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+}
 
 // Scroll reveal
 const reveals = document.querySelectorAll('.scroll-reveal');
@@ -45,12 +49,15 @@ if (contactForm) {
         const formData = new FormData(contactForm);
         const jsonData = Object.fromEntries(formData.entries());
         
-        fetch("/api/contact", {
+        fetch("https://justmemedia-backend.onrender.com/api/contact", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(jsonData),
         })
-        .then(res => res.json())
+        .then(res => {
+            if (!res.ok) throw new Error('Server error: ' + res.status);
+            return res.json();
+        })
         .then((data) => {
             if (data.status === 'ok') {
                 contactForm.style.display = 'none';
@@ -87,12 +94,15 @@ if (partnerForm) {
             strategy: formData.get('message')
         };
         
-        fetch("/api/partners", {
+        fetch("https://justmemedia-backend.onrender.com/api/partners", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(jsonData),
         })
-        .then(res => res.json())
+        .then(res => {
+            if (!res.ok) throw new Error('Server error: ' + res.status);
+            return res.json();
+        })
         .then((data) => {
             if (data.status === 'ok') {
                 partnerForm.style.display = 'none';
