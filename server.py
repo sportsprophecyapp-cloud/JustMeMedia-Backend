@@ -27,11 +27,14 @@ def send_email(subject, body):
 
     msg.attach(MIMEText(body, 'plain'))
 
-    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server = smtplib.SMTP('smtp.gmail.com', 587, timeout=15)
     server.starttls()
     server.login(GMAIL_USER, GMAIL_APP_PASSWORD)
     server.send_message(msg)
-    server.quit()
+    try:
+        server.quit()
+    except Exception:
+        pass
 
 @app.route('/api/contact', methods=['POST'])
 def contact():
