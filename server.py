@@ -11,9 +11,16 @@ app = Flask(__name__)
 CORS(app)
 
 resend.api_key = os.getenv("RESEND_API_KEY")
+if not resend.api_key:
+    print("⚠️ WARNING: RESEND_API_KEY not found. Emails will be disabled.")
+
 DESTINATION_EMAIL = "william@justmemedia.ca"
 
 def send_email(subject, body):
+    if not resend.api_key:
+        print(f"Skipping email (No API Key): {subject}")
+        return None
+        
     # Until the custom domain is verified in Resend, we must use their onboarding domain
     # and send TO the registered account email (william@justmemedia.ca)
     params = {
