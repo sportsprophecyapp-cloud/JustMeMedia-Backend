@@ -8,7 +8,7 @@ JustMe Media is a boutique product development studio specialized in **AI-powere
 | Product | Focus | Stage | Primary Goal |
 | :--- | :--- | :--- | :--- |
 | **SaaS Price DB** | Competitive Monitoring | Live / Scaling | B2B subscriptions & churn prevention audits. |
-| **TripSync** | Private AI Travel | Live / Verified | Activating affiliate revenue & local-first users. |
+| **TripSync** | Smart Deal Intelligence | Live / Optimized | Affiliate revenue via data-driven booking hacks. |
 | **Events Arena** | Engagement Platforms | Live / Hardened | Brand sponsorships & creator codes. |
 | **JustMe Media Site** | Studio Presence | Live / Netlify | Boutique agency leads & partner network. |
 
