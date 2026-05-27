@@ -7,7 +7,7 @@
 
 | Domain | Purpose | DNS Registrar | Primary Nameservers / Target | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **`justmemedia.ca`** | Primary Studio Homepage | Namecheap | Netlify DNS (`dns1.p05.nsone.net`, etc.) | ✅ **Live** |
+| **`justmemedia.ca`** | Primary Studio Homepage | Namecheap | Render custom domain config (`justmemedia.ca` A/CNAME) | ✅ **Live** |
 | **`lexsort.com`** | LexSort Invite-Only Page | Registrar Account | Netlify CDN (`75.2.60.5` CNAME/A record) | ✅ **Live** |
 
 * **Namecheap Account (for `justmemedia.ca`):**
@@ -17,26 +17,22 @@
 
 ---
 
-## 💻 2. Frontend Hosting: Netlify
+## 💻 2. Unified Hosting Solution: Render
 
-*All static assets, forms, and custom redirects for the studio landing page are managed via Netlify.*
+*The frontend static files, assets, and backend APIs for the studio homepage run in a single, high-availability, unified Python/Flask service.*
 
-* **Account Login:** `wcommu@gmail.com` (Google SSO / Password via Bitwarden)
-* **Team:** `wcommu’s team`
-* **Netlify Project Name:** `cute-cassata-726476`
-* **Netlify Site ID:** `08efd277-6ad1-4fb1-ae2f-6b4ec4f0587a`
-* **Domain Anchor:** `https://justmemedia.ca`
+* **Account Login:** `wcommu@gmail.com` (Google SSO)
+* **Render Service Name:** `justmemedia-backend`
+* **Production Service URL:** `https://justmemedia.ca`
 * **Local Source Path:** `/Users/williamcommu/Desktop/JUST_ME_MEDIA_VAULT/01_STUDIO_CORE/JustMeMedia_Core`
 
-### 🚀 Manual Production Deployment Workflow
-To deploy updates to the live site, open your terminal in the local source directory and run:
+### 🚀 Production Deployment Workflow
+To deploy updates to both the frontend design and the backend APIs, simply commit and push your local changes to GitHub `origin main`. Render will automatically pull, rebuild, and hot-swap:
 ```bash
-npx -y netlify-cli deploy --prod --dir=.
+git add -A
+git commit -m "Your deployment message"
+git push origin main
 ```
-
----
-
-## ⚙️ 3. Backend Services: Render
 
 *The dynamic backend endpoints (such as project inquiries and partner applications) run as a Python/Flask web service on Render.*
 
