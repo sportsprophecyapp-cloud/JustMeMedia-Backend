@@ -7,8 +7,13 @@
 
 | Domain | Purpose | DNS Registrar | Primary Nameservers / Target | Status |
 | :--- | :--- | :--- | :--- | :--- |
-| **`justmemedia.ca`** | Primary Studio Homepage | Registrar Account | Netlify DNS (`dns1.p05.nsone.net`, etc.) | ✅ **Live** |
+| **`justmemedia.ca`** | Primary Studio Homepage | Namecheap | Netlify DNS (`dns1.p05.nsone.net`, etc.) | ✅ **Live** |
 | **`lexsort.com`** | LexSort Invite-Only Page | Registrar Account | Netlify CDN (`75.2.60.5` CNAME/A record) | ✅ **Live** |
+
+* **Namecheap Account (for `justmemedia.ca`):**
+  * **Login Email:** `wcommu@hotmail.com`
+  * **Username:** `ZEROBudget`
+  * **Password:** `F7fhK6D_8,exmL/`
 
 ---
 

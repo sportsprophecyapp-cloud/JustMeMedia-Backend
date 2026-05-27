@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import os
 from dotenv import load_dotenv
@@ -6,7 +6,7 @@ import resend
 
 load_dotenv()
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='', static_folder='.')
 # Enable CORS for the frontend to communicate with the backend
 CORS(app)
 
@@ -31,6 +31,26 @@ def send_email(subject, body):
     }
     email = resend.Emails.send(params)
     return email
+
+@app.route('/')
+def home():
+    return send_from_directory('.', 'index.html')
+
+@app.route('/partners')
+def partners_page():
+    return send_from_directory('.', 'partners.html')
+
+@app.route('/partners.html')
+def partners_html():
+    return send_from_directory('.', 'partners.html')
+
+@app.route('/robots.txt')
+def robots():
+    return send_from_directory('.', 'robots.txt')
+
+@app.route('/sitemap.xml')
+def sitemap():
+    return send_from_directory('.', 'sitemap.xml')
 
 @app.route('/api/contact', methods=['POST'])
 def contact():
