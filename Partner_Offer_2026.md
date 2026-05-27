@@ -52,5 +52,5 @@ William Commu
 
 **Our Live Portfolio:**
 * [SaaS Price DB](https://saaspricedb.com)
-* [TripSync AI](https://tripsync-ilao.onrender.com)
+* [TripSync AI](https://tripsync.ca)
 * [Sports Prophecy Arena](https://www.sportsprophecyapp.com)

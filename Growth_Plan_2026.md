@@ -45,7 +45,7 @@
 > If you have an audience in the tech space and want to team up with a reliable builder, let’s talk. Serious interest only — we’re being highly selective about who enters our ecosystem.
 > 
 > → Check our work: [justmemedia.ca](https://justmemedia.ca)
-> → Products: [saaspricedb.com](https://saaspricedb.com) | [tripsync-ilao.onrender.com](https://tripsync-ilao.onrender.com) | [sportsprophecyapp.com](https://www.sportsprophecyapp.com)
+> → Products: [saaspricedb.com](https://saaspricedb.com) | [tripsync.ca](https://tripsync.ca) | [sportsprophecyapp.com](https://www.sportsprophecyapp.com)
 
 ### Short-Form (X / Reddit / Comments)
 *Use this for high-impact, quick reads.*
