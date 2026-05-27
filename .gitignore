@@ -1,7 +1,13 @@
 venv/
 *.pyc
 __pycache__/
+
+# SECURITY: Never commit environment files with secrets
 .env
+**/.env
+.env.*
+**/.env.*
+
 .DS_Store
 *.log
 JMM-Outreach/venv/
