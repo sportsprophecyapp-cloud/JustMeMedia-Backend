@@ -52,9 +52,6 @@ def robots():
 def sitemap():
     return app.send_static_file('sitemap.xml')
 
-@app.route('/api/test-deploy', methods=['GET'])
-def test_deploy():
-    return jsonify({"status": "live"})
 
 @app.route('/api/contact', methods=['POST'])
 def contact():
