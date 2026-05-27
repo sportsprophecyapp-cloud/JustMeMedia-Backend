@@ -34,23 +34,23 @@ def send_email(subject, body):
 
 @app.route('/')
 def home():
-    return send_from_directory('.', 'index.html')
+    return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/partners')
 def partners_page():
-    return send_from_directory('.', 'partners.html')
+    return send_from_directory(app.static_folder, 'partners.html')
 
 @app.route('/partners.html')
 def partners_html():
-    return send_from_directory('.', 'partners.html')
+    return send_from_directory(app.static_folder, 'partners.html')
 
 @app.route('/robots.txt')
 def robots():
-    return send_from_directory('.', 'robots.txt')
+    return send_from_directory(app.static_folder, 'robots.txt')
 
 @app.route('/sitemap.xml')
 def sitemap():
-    return send_from_directory('.', 'sitemap.xml')
+    return send_from_directory(app.static_folder, 'sitemap.xml')
 
 @app.route('/api/contact', methods=['POST'])
 def contact():
