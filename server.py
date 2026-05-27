@@ -52,6 +52,10 @@ def robots():
 def sitemap():
     return send_from_directory(app.static_folder, 'sitemap.xml')
 
+@app.route('/api/test-deploy', methods=['GET'])
+def test_deploy():
+    return jsonify({"status": "live"})
+
 @app.route('/api/contact', methods=['POST'])
 def contact():
     try:
