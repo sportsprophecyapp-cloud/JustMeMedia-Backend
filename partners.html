@@ -29,14 +29,27 @@
 <nav id="navbar" class="scrolled">
     <div class="nav-container">
         <a href="/" class="nav-logo">Just Me <span>Media</span></a>
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
             <li><a href="/#services">Services</a></li>
             <li><a href="/#products">Products</a></li>
             <li><a href="/#about">About</a></li>
+            <li><a href="partners.html" style="color: var(--accent-mid);">Partners</a></li>
             <li><a href="/#contact" class="nav-cta">Contact</a></li>
         </ul>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </div>
 </nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+    <a href="/#services" class="mobile-link">Services</a>
+    <a href="/#products" class="mobile-link">Products</a>
+    <a href="/#about" class="mobile-link">About</a>
+    <a href="partners.html" class="mobile-link" style="color: var(--accent-mid);">Partners</a>
+    <a href="/#contact" class="mobile-link mobile-cta">Contact</a>
+</div>
 
 <section class="partner-hero">
     <div class="container">
@@ -62,6 +75,11 @@
                         <p>Experienced sales professionals who can close high-stakes bespoke development deals for private AI environments.</p>
                         <span class="commission-badge">Tiered Revenue Bonuses</span>
                     </div>
+                    <div class="partner-item">
+                        <h3>Product Growth Partner</h3>
+                        <p>You run the growth, we run the tech. One open position per product. True revenue partnership on a live, production-ready AI product.</p>
+                        <span class="commission-badge">50/50 Revenue Split — No upfront cost</span>
+                    </div>
                 </div>
             </div>
 
@@ -83,6 +101,7 @@
                             <label for="p-role" style="color: var(--ink); font-size: 0.8rem; font-weight: 600;">Role of Interest</label>
                             <select id="p-role" name="role" style="width: 100%; border: 1px solid var(--border); padding: 0.8rem; border-radius: 8px; background: white;">
                                 <option value="growth">Growth Partner (B2B)</option>
+                                <option value="product">Product Growth Partner (50/50 Split)</option>
                                 <option value="content">Content Partner (Influencer)</option>
                                 <option value="strategic">Strategic Associate (Sales)</option>
                                 <option value="other">Other</option>
